@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>블페 캐릭터 정보</title>
+    <style>
+        table {
+            width: 1805px;
+            margin: auto;
+        }
+        tr {
+            text-align: center;
+            visibility: collapse;
+        }
+        input {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .selected {
+            visibility: visible;
+        }
+    </style>
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#heart').change(function() {
+                if ($('#heart').is(':checked')) {
+                    $(".heart").each(function() {
+                        $(this).addClass("selected");
+                    });
+                } else {
+                    $(".heart").each(function() {
+                        $(this).removeClass("selected");
+                    });
+                }
+            })
+            $('#skill').change(function() {
+                if ($('#skill').is(':checked')) {
+                    $(".skill").each(function() {
+                        $(this).addClass("selected");
+                    });
+                } else {
+                    $(".skill").each(function() {
+                        $(this).removeClass("selected");
+                    });
+                }
+            })
+            $('#body').change(function() {
+                if ($('#body').is(':checked')) {
+                    $(".body").each(function() {
+                        $(this).addClass("selected");
+                    });
+                } else {
+                    $(".body").each(function() {
+                        $(this).removeClass("selected");
+                    });
+                }
+            })
+            $('#bravery').change(function() {
+                if ($('#bravery').is(':checked')) {
+                    $(".bravery").each(function() {
+                        $(this).addClass("selected");
+                    });
+                } else {
+                    $(".bravery").each(function() {
+                        $(this).removeClass("selected");
+                    });
+                }
+            })
+            $('#wisdom').change(function() {
+                if ($('#wisdom').is(':checked')) {
+                    $(".wisdom").each(function() {
+                        $(this).addClass("selected");
+                    });
+                } else {
+                    $(".wisdom").each(function() {
+                        $(this).removeClass("selected");
+                    });
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <label for="heart"><img src="속성/Heart_icon.png"><input type="checkbox" id="heart"></label>
+        <label for="skill"><img src="속성/Skill_icon.png"><input type="checkbox" id="skill"></label>
+        <label for="body"><img src="속성/Body_icon.png"><input type="checkbox" id="body"></label>
+        <label for="bravery"><img src="속성/Bravery_icon.png"><input type="checkbox" id="bravery"></label>
+        <label for="wisdom"><img src="속성/Wisdom_icon.png"><input type="checkbox" id="wisdom"></label>
+    </div>
+
+    <table border="1">
+        <tr class="selected">
+            <th colspan="11" style="font-size: 50px;">블페 캐릭터 정보</th>
+        </tr>
+
+        <tr class="selected">
+            <th style="width: 80px;">이름<br>(별명)</th>
+            <th>사진</th>
+            <th>차크라 칸</th>
+            <th colspan="2" style="width: 280px;">스텟</th>
+            <th colspan="2">인술</th>
+            <th colspan="2">오의</th>
+            <th>성능 평가<br>(육성 순위)</th>
+            <th>부가 설명</th>
+        </tr>
+        
+        <tr class="wisdom">
+            <td rowspan="2">자부자</td>
+            <td rowspan="2"><img src="사진/Card-0143.png"></td>
+            <td rowspan="2">5 차크라</td>
+
+            <td>체력</td>
+            <td>1872 + 300 + 100 = 2172</td>
+
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">4344 데미지</td>
+            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">14335 데미지<br>입힌 데미지의 7% 수치만큼 체력 회복</td>
+
+            <td rowspan="2">F</td>
+            <td rowspan="2">낮은 인술, 오의 데미지</td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2034 + 100 + 100 = 2234</td>
+            </tr>   
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">록리</td>
+            <td rowspan="2"><img src="사진/Card-0149.png"></td>
+            <td rowspan="2">5 차크라</td>
+    
+            <td>체력</td>
+            <td>2068 + 300 + 0 = 2368</td>
+   
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">9708 데미지 (기본)<br/>24272 데미지 (오의와 연계시)</td>
+                
+            <td rowspan="2">자가 버프</td>
+            <td rowspan="2">자신에게 10턴간 150% 공격력 증가 부여, <br>추가적으로 자신에게 10턴간 슬립데미지 부여</td>
+    
+            <td rowspan="2">F</td>
+            <td rowspan="2">
+                (풀어빌 28코 캐릭터) <br>
+                6성으로 각성시 특수재료 필요 <br>
+                공증 받아도 낮은 인술 데미지
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>2734 + 100 + 200 = 3034</td>
+            </tr>   
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">가아라</td>
+            <td rowspan="2"><img src="사진/Card-0174.png"></td>
+            <td rowspan="2">6 차크라</td>
+        
+            <td>체력</td>
+            <td>1818 + 300 + 0 = 2118</td>
+        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">9432 데미지</td>
+                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">14148 데미지</td>
+        
+            <td rowspan="2">F</td>
+            <td rowspan="2">
+                낮은 인술, 오의 데미지<br>
+                6성으로 각성시 특수재료 필요
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td> 2258 + 100 + 0 = 2358</td>
+            </tr>   
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">이타치</td>
+            <td rowspan="2"><img src="사진/Card-0211.png"></td>
+            <td rowspan="2">5 차크라</td>
+            
+            <td>체력</td>
+            <td>1578 + 300 + 200 = 2078</td>
+            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">5480 데미지, <br>80% 확률로 5턴간 슬립 데미지 부여</td>
+                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">13702 데미지, <br>자신에게 3턴간 절대회피 부여</td>
+            
+            <td rowspan="2">F</td>
+            <td rowspan="2">
+                    낮은 인술, 오의 데미지<br>
+                    6성으로 각성시 특수재료 필요
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>1908 + 100 + 100 = 2108</td>
+            </tr>   
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">미나토</td>
+            <td rowspan="2"><img src="사진/Card-0230.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>1598 + 300 + 0 = 1898</td>
+            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">12969 데미지</td>
+                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">29722 데미지</td>
+            
+            <td rowspan="2">D</td>
+            <td rowspan="2">
+                (풀어빌 28코 캐릭터) <br>
+                낮은 인술, 오의 데미지
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>2302 + 100 + 300 = 2702</td>
+            </tr>   
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">나루토<br><b>(꼬루토)</b></td>
+            <td rowspan="2"><img src="사진/Card-0260.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>1718 + 300 + 0 = 2018</td>
+            
+            <td rowspan="2">자가 버프</td>
+            <td rowspan="2">자신에게 9턴간 50% 공격력 증가 부여, <br> 2차크라 회복 (최대 3중첩 가능)</td>
+                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">지능 속성에겐 37248 데미지,<br>나머지 속성에겐 31400 데미지<br>----------<br>
+                지능 속성에겐 94200 데미지, <br>나머지 속성에겐 78500 데미지 (인술 3중첩시)</td>
+            
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                인술 중첩시 매우 높은 <br>
+                데미지를 보여주지만 <br>
+                시간이 너무 오래 걸림
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>3040 + 100 + 0 = 3140</td>
+            </tr>   
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">가아라</td>
+            <td rowspan="2"><img src="사진/Card-0284.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>2166 + 300 + 0 = 2466</td>
+            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">4436 데미지, <br>인술 불능과 5턴간 공격력 감소를 <br>각각 65% 확률로 부여</td>
+                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">22180 데미지<br>----------<br>35488 데미지 (적이 행동불능 상태일시)</td>
+            
+            <td rowspan="2">F</td>
+            <td rowspan="2">
+                낮은 인술, 오의 데미지
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2188 + 100 + 0 = 2288</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">우타카타</td>
+            <td rowspan="2"><img src="사진/Card-0311.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>1816 + 300 + 0 = 2116</td>
+            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">11030 데미지<br>----------<br>22060 데미지 (적이 슬립 데미지 상태시)</td>
+                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">24266 데미지, <br>100% 확률로 슬립 데미지 부여, <br>자신의 차크라 3 회복</td>
+            
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                낮은 인술, 오의 데미지
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>1906 + 100 + 200 = 2206</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">마다라<br><b>(맘다라)</b></td>
+            <td rowspan="2"><img src="사진/Card-0334.png"></td>
+            <td rowspan="2">6 차크라</td>
+            
+            <td>체력</td>
+            <td>2464 + 300 + 0 = 2764</td>
+            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">14352 데미지, <br>100% 확률로 8턴간 슬립 데미지 부여</td>
+                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">속성 무시 43056 데미지, 넉백</td>
+            
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                신캐들 때문에 저평가 받지만 <br>
+                노어빌로도 속성무시 <br>
+                4만뎀 이상 넣어주는 캐릭터 <br>
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>2092 + 100 + 200 = 2392</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">킬러비</td>
+            <td rowspan="2"><img src="사진/Card-0355.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>2470 + 300 + 0 = 2770</td>
+            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">13850 데미지</td>
+                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피를 무시하고 <br>31855 데미지, <br>타격한 적 넉백</td>
+            
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                낮은 인술, 오의 데미지
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>2706 + 100 + 300 = 3106</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">츠나데<br><b>(얼낙츠)</b></td>
+            <td rowspan="2"><img src="사진/Card-0376.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>1156 + 300 +0 = 1456</td>
+            
+            <td rowspan="2">자가 버프</td>
+            <td rowspan="2">체력을 3400(+1000)만큼<br>회복하고 10턴간 자신의<br> 공격력 25% 증가 (최대 6중첩 가능)</td>
+                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">32786 데미지<br>81965 데미지 (인술 6중첩시)</td>
+            
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                중첩하는데 걸리는<br>
+                시간이 너무 길다
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>2222 + 100 + 200 = 2522</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">오비토</td>
+            <td rowspan="2"><img src="사진/Card-0395.png"></td>
+            <td rowspan="2">8 차크라<br>->6 차크라<br>(풀어빌시)</td>
+            
+            <td>체력</td>
+            <td>1860 + 300 + 0 = 2160</td>
+            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">14672 데미지, <br>80% 확률로 5턴간<br>슬립 데미지 부여, 넉백</td>
+                        
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">32488 데미지, 넉백</td>
+            
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                평범한 인술/오의 데미지<br>
+                어빌을 열지않으면 <br>
+                8차크라의 극악의 성능
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>1996 + 100 + 0 = 2096</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">하시라마</td>
+            <td rowspan="2"><img src="사진/Card-0418.png"></td>
+            <td rowspan="2">4 차크라</td>
+            
+            <td>체력</td>
+            <td>2260 + 300 + 0 = 2560</td>
+            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">15360 데미지, <br>4턴간 체력회복 불능, <br>공격력 감소를 각각 60% 확률로 부여</td>
+                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">38400 데미지, <br>6턴간 인술 불능, <br>2턴간 행동불능을 각각 50% 확률로 부여</td>
+            
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                체속에 많이 없는 <br>
+                범위 오의 캐릭터, <br>
+                어빌시 탱커로 사용 가능
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>1946 + 100 + 0 = 2046</td>
+            </tr>
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">나루토<br><b>(양루토)</b></td>
+            <td rowspan="2"><img src="사진/Card-0428.png"></td>
+            <td rowspan="2">6 차크라<br>->5 차크라<br>(5 어빌시)</td>
+            
+            <td>체력</td>
+            <td>2190 + 300 + 0 = 2490</td>
+            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">배리어를 해제하고 18886 데미지</td>
+                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">바꿔치기와 절대 회피를 무시하고 <br>43168 데미지, 넉백</td>
+            
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                요즘은 한물갔지만<br>
+                여전히 용기속성 <br>
+                전용 힐/딜/탱<br>
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>2598 + 100 + 0 = 2698</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">사스케<br><b>(음스케)</b></td>
+            <td rowspan="2"><img src="사진/Card-0430.png"></td>
+            <td rowspan="2">5 차크라<br>->4 차크라<br>(5 어빌시)</td>
+            
+            <td>체력</td>
+            <td>2238 + 300 + 0 = 2538</td>
+            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">12947 데미지, <br>80% 확률로 7턴간 슬립데미지 부여</td>
+                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">34133 데미지, <br>적들을 자신에게 끌어당기고 <br>80% 확률로 2턴간 행동불능 부여</td>
+            
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                요즘은 한물갔으며 <br>
+                5 어빌이 없다면 <br>
+                차크라칸이 부담됨
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2004 + 100 + 250 = 2354</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">페인</td>
+            <td rowspan="2"><img src="사진/Card-0452.png"></td>
+            <td rowspan="2">5 차크라</td>
+                
+            <td>체력</td>
+            <td>2818 + 300 + 0 = 3118</td>
+                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">16812 데미지, <br>자신의 체력 1500 회복</td>
+                            
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">33624 데미지, <br>넉백 효과</td>
+                
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                쏠쏠한 데미지의 <br>
+                전체 오의지만<br>
+                차크라칸이 부담됨
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>2702 + 100 + 0 = 2802</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">오비토</td>
+            <td rowspan="2"><img src="사진/Card-0469.png"></td>
+            <td rowspan="2">5 차크라</td>
+                    
+            <td>체력</td>
+            <td>2872 + 300 + 0 = 3172</td>
+                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">60% 확률로 2턴간 <br>행동불능을 부여하고<br>
+                ----------<br>
+                11520 데미지(기본)<br>
+                15360 데미지(1어빌 개방시)</td>
+                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">속성을 무시하고<br>
+                ----------<br>
+                53760 데미지(기본)<br>
+                57600 데미지 (1어빌 개방시)</td>
+                    
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                기술 죽창 캐릭터<br>
+                5 차크라인게 아쉽다
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>1820 + 100 + 0 = 1920</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">가이</td>
+            <td rowspan="2"><img src="사진/Card-0487.png"></td>
+            <td rowspan="2">6 차크라</td>
+                        
+            <td>체력</td>
+            <td>1158 + 300 + 0 = 1458</td>
+                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">26400 데미지, 넉백, <br>현재 체력의 15% 감소</td>
+                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피와 배리어를 해제, <br>
+                바꿔치기를 무시하고 61600 데미지, <br>
+                넉백, 현재 체력의 35% 감소</td>
+                        
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                데미지는 강하지만<br>
+                6 차크라에 체력마저 <br>
+                대폭 감소시킨다<br>
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>3600 + 100 + 700 = 4400</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">카카시</td>
+            <td rowspan="2"><img src="사진/Card-0509.png"></td>
+            <td rowspan="2">5 차크라</td>
+                            
+            <td>체력</td>
+            <td>2174 + 300 + 0 = 2474</td>
+                            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">자신의 회피 확률을 <br>
+                2턴간 30% 증가시키고<br>
+                ----------<br>
+                17069 데미지 (기본)<br>
+                23896 데미지 (어빌 개방시)</td>
+                                        
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">자신에게 30% 데미지 감소 부여하고<br>
+                ----------<br>
+                36764 데미지 (기본)<br>
+                51469 데미지 (어빌 개방시)</td>
+                            
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                어빌을 뚫을수록<br>
+                강해지는 캐릭터
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>2526 + 100 + 0 = 2626</td>
+            </tr>
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">사쿠라</td>
+            <td rowspan="2"><img src="사진/Card-0511.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                
+            <td>체력</td>
+            <td>2744 + 300 + 0 = 3044</td>
+                                
+            <td rowspan="2">자가 버프</td>
+            <td rowspan="2">2턴간 술법 불능 저항과 <br>
+                행동불능 저항을 각각 <br>
+                90% 확률로 부여하고 <br>
+                자신의 체력을 2턴간 2500씩 회복</td>
+                                            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">배리어를 해제하고 30816 데미지, <br>
+                넉백, 5턴간 체력회복 불능 부여
+                                
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                    양루토가 있는 시점에서 <br>
+                    가치가 떡락하는 캐릭터
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>1612 + 100 + 0 = 1712</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">나가토</td>
+            <td rowspan="2"><img src="사진/Card-0535.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                    
+            <td>체력</td>
+            <td>3212 + 300 + 0 = 3512</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">9704 데미지</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">25473 데미지, 넉백, <br>
+                40% 확률로 2턴간 술법 불능</td>
+            <td rowspan="2">D</td>
+            <td rowspan="2">
+                뭐 하나 특출난게 <br>
+                없는 캐릭터
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2326 + 100 + 0 = 2426</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">나루토<br><b>(빡구토)</b></td>
+            <td rowspan="2"><img src="사진/Card-0552.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>2760 + 300 + 0 = 3060</td>
+                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">15774 데미지, 넉백, <br>2턴간 술법으로 받는 피해 무시</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">36710 데미지, 넉백,<br>자신의 차크라 1 회복</td>
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                어빌 조합이 괜찮지만 <br>
+                신스케 하위호환이라 <br>
+                추천하지 않음
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>2768 + 100 + 0 = 2868</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">사스케</td>
+            <td rowspan="2"><img src="사진/Card-0569.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>2004 + 300 + 0 = 2304</td>
+                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">15881 데미지, 50% 확률로 <br>
+                자신에게 5턴간<br> 
+                차크라 회복 불능 저항 부여</td>
+                                                
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">35450 데미지, 80% 확률로 <br>
+                자신에게 5턴간 행동 불능 저항 부여</td>
+            <td rowspan="2">C</td>
+            <td rowspan="2">
+                체력 하시라마의 하위호환
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>2736 + 100 + 0 = 2836</td>
+            </tr>
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">마다라<br><b>(육다라)</b></td>
+            <td rowspan="2"><img src="사진/Card-0590.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>2298 + 300 + 0 = 2598</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">절대 회피와 배리어 제거, <br>
+                바꿔치기 무시하고 14840 데미지, <br>
+                2턴간 술법 데미지 무시</td>
+                                                
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">바꿔치기를 무시하고 44800 데미지, <br>
+                적들을 자신의 위치로 끌고오며 <br>
+                100% 확률로 2턴간 행동 불능 부여</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                한물 가는것처럼 보였지만 <br>
+                한돌 나오고 다시 떡상하고 있는 캐릭터
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>2300 + 100 + 400 = 2800</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">카구야</td>
+            <td rowspan="2"><img src="사진/Card-0594.png"></td>
+            <td rowspan="2">5 차크라<br>->4 차크라<br>(3어빌시)</td>
+                                    
+            <td>체력</td>
+            <td>3386 + 300 + 0 = 3686</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">16783 데미지, <br>
+                자신에게 데미지 40% 감소 부여, <br>
+                자신의 차크라 1 회복</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기와 속성을 무시하고<br>
+                58608 데미지, 넉백</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                풀어빌시 힐/탱,<br> 
+                무한 인술도 노릴 수 있음
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>2564 + 100 + 0 = 2664</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">지라이야</td>
+            <td rowspan="2"><img src="사진/Card-0611.png"></td>
+            <td rowspan="2">5 차크라</td>
+                                    
+            <td>체력</td>
+            <td>1438 + 300 + 0 = 1738</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">15240 데미지 (마음 속성 대상) <br>
+                ----------<br>
+                11176 데미지 (그 외 속성 대상), <br>
+                넉백</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기를 무시하고<br>
+                48768 데미지 (마음 속성 대상)<br>
+                ----------<br>
+                32512 데미지 (그 외 속성 대상)</td>
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                마음속성 저격용 캐릭터
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>1632 + 100 + 300 = 2032</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">미나토</td>
+            <td rowspan="2"><img src="사진/Card-0628.png"></td>
+            <td rowspan="2">4 차크라<br>->3 차크라<br>(풀어빌시)</td>
+                                    
+            <td>체력</td>
+            <td>2508 + 300 + 0 = 2808</td>
+                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기를 무시하고<br>
+                16284 데미지<br>
+                ----------<br>
+                19540 데미지 (3어빌시 용기속성 대상)<br>
+                90% 확률로 3턴간 공격력 감소 부여</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피를 무시하고<br>
+                49666 데미지 (용기 속성 대상)<br>
+                ----------<br>
+                69532 데미지 (3어빌시 용기 속성 대상)<br>
+                ----------<br>
+                43424 데미지 (그 외 속성 대상)</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                풀어빌시 괜찮은 성능이지만<br>
+                지능 카카시의 하위호환
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2614 + 100 + 0 = 2714</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">카부토</td>
+            <td rowspan="2"><img src="사진/Card-0643.png"></td>
+            <td rowspan="2">5 차크라<br>->4 차크라<br>(풀어빌시)</td>
+                                    
+            <td>체력</td>
+            <td>3212 + 300 + 0 = 3512</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">12636 데미지 (체력 속성 대상)<br>
+                ----------<br>
+                10692 데미지 (그 외 속성 대상)<br>
+                70% 확률로 1턴간 행동 불능 부여</td>
+                                                
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">32076 데미지<br>
+                60% 확률로 5턴간 공격력 감소 부여<br>
+                30% 확률로 2턴간 술법 불능 부여</td>
+            <td rowspan="2">B</td>
+            <td rowspan="2">
+                뭔가 다 고만고만하지만<br>
+                기술 속성에 많이없는<br>
+                범위 오의 캐릭터<br>
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>2326 + 100 + 0 = 2426</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">나루토<br><b>(종루토)</b></td>
+            <td rowspan="2"><img src="사진/Card-0660.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>2368 + 300 + 0 = 2668</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">바꿔치기 무시하고 <br>
+                12416 데미지, 넉백</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">적의 절대 회피, 공격력 증가, <br>
+                배리어 해제, 바꿔치기를 무시하고 <br>
+                46560 데미지</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                풀어빌시 힐딜탱 다 되는 <br>
+                적폐 캐릭터
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>1452 + 100 + 0 = 1552</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">사스케<br><b>(종스케)</b></td>
+            <td rowspan="2"><img src="사진/Card-0662.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>2058 + 300 + 0 = 2358</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">9905 데미지, 넉백, <br>
+                자신의 공격 범위를 '대'범위로 변경, <br>
+                자신의 차크라 2 회복</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">속성 무시 48110 데미지, <br>
+                자신에게 1턴동안 10회의 절대 회피 부여</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                두 명만 맞추면 무한 인술 가능,<br>
+                속성 무시 오의까지 되는<br>
+                적폐 캐릭터
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>2730 + 100 + 0 = 2830</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">마다라<br><b>(예다라)</b></td>
+            <td rowspan="2"><img src="사진/Card-0681.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>2010 + 300 + 0 = 2310</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">10710 데미지(기본)<br>
+                ----------<br>
+                13923 데미지 <br>
+                (적이 상태이상에 걸렸을시)</td>
+                                                
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">35343 데미지(기본)<br>
+                ----------<br>
+                41769 데미지 <br>
+                (적이 상태이상에 걸렸을시)</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                준수한 데미지의 <br>
+                범위인술, 오의
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2042 + 100 + 0 = 2142</td>
+            </tr>
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">이타치</td>
+            <td rowspan="2"><img src="사진/Card-0700.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                    
+            <td>체력</td>
+            <td>1880 + 300 + 0 = 2180</td>
+                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">11088 데미지, <br>
+                4턴간 턴당 1000데미지를 주는 <br>
+                검은 불꽃의 지역을 소환</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피 제거, <br>
+                바꿔치기를 무시하고 42129 데미지,<br>
+                80% 확률로 3턴간 행동 불능 부여</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                육다라보다 약간 아쉬운 성능
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>2818 + 100 + 0 = 2918</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">시스이</td>
+            <td rowspan="2"><img src="사진/Card-0715.png"></td>
+            <td rowspan="2">5 차크라</td>
+                                    
+            <td>체력</td>
+            <td>1372 + 300 + 0 = 1672</td>
+                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">13716 데미지 (1중첩 기준)<br>
+                차크라 2 회복,<br>
+                6턴간 공격력 50% 증가,<br>   
+                2턴간 회피 20% 증가</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">45720 데미지, <br>
+                    피격된 적의 불리한 속성으로부터 <br>
+                    받는 데미지 20% 증가</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                데미지는 괜찮지만<br>
+                술법이 모두 1인 대상이고<br>
+                5차크라라서 아쉬운 캐릭터
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>2440 + 100 + 0 = 2540</td>
+            </tr>
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">카카시</td>
+            <td rowspan="2"><img src="사진/Card-0735.png"></td>
+            <td rowspan="2">5 차크라</td>
+                                        
+            <td>체력</td>
+            <td>1876 + 300 + 0 = 2176</td>
+                                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기, 데미지 감소를 무시하고<br>
+                    16574 데미지 (기본)<br>
+                    ----------<br>
+                    21546 데미지 (1어빌 개방시 지능 속성 대상)</td>
+                                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기, 데미지 감소를 무시하고<br>
+                    39134 데미지 (기본)<br>
+                    ----------<br>
+                    50874 데미지 (1어빌 개방시 지능 속성 대상)</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                지능 캐릭터에게(만) <br>
+                참교육이 가능하다
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>2202 + 100 + 0 = 2302</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">하시라마 </td>
+            <td rowspan="2"><img src="사진/Card-0746.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                        
+            <td>체력</td>
+            <td>2992 + 300 + 0 = 3292</td>
+                                        
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">12004 데미지, <br>
+                90% 확률로 6턴간 체력 회복 불능 부여<br>
+                70% 확률로 5턴간 공격력 감소 부여<br>    
+                3턴간 술법 데미지 무시</td>
+                                                    
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">절대 회피, 공격력 증가, <br>
+                배리어 해제, 바꿔치기를 무시하고 <br>
+                37908 데미지, <br>
+                100% 확률로 8턴간 체력 회복 불능</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                데미지는 조금 아쉽지만<br>
+                술법이 모두 전체 대상인데다가<br>
+                부과효과도 쓸만하다
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2006 + 100 + 0 = 2106</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">마다라</td>
+            <td rowspan="2"><img src="사진/Card-0748.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                            
+            <td>체력</td>
+            <td>1734 + 300 + 0 = 2034</td>
+                                            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피와 배리어 제거, <br>
+                바꿔치기를 무시하고 <br>
+                속성 무시 10485 데미지</td>
+                                                        
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">절대 회피와 배리어 제거, <br>
+                바꿔치기를 무시하고<br>
+                38445 데미지 (용기 속성 대상)<br>
+                ----------<br>
+                25630 데미지 (그 외 속성)</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                풀어빌하면 기술 속성<br>
+                2탑 안에 드는 캐릭터
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>2230 + 100 + 0 = 2330</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">미나토</td>
+            <td rowspan="2"><img src="사진/Card-0761.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                                
+            <td>체력</td>
+            <td>1642 + 300 + 0 = 1942</td>
+                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기를 무시하고 14796 데미지, <br>
+                70% 확률로 7턴간 체력 회복 불능 부여</td>
+                                                            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기를 무시하고 <br>
+                화면 상의 1명의 적에게 51786 데미지, <br>
+                90% 확률로 12턴간 체력 회복 불능 부여<br>    
+                자신에게 6턴간 데미지 20% 감소 부여</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                오의 데미지는 종루토를 <br>
+                뛰어넘지만 인술이 좀 아쉽다
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>2366 + 100 + 0 = 2466</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">인드라</td>
+            <td rowspan="2"><img src="사진/Card-0788.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                                    
+            <td>체력</td>
+            <td>1970 + 300 + 0 = 2270</td>
+                                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">데미지 감소를 무시하고 8489 데미지, <br>
+                40% 확률로 2턴간 행동 불능 부여</td>
+                                                                
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">데미지 감소를 무시하고 <br>
+                25467 데미지, 넉백, <br>
+                자신에게 70% 확률로 6턴간 행동 불능 저항 부여</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                3 차크라인것을 감안해도<br>
+                하자있는 데미지
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>2134 + 100 + 0 = 2234</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">나루토</td>
+            <td rowspan="2"><img src="사진/Card-0801.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                                        
+            <td>체력</td>
+            <td>1846 + 300 + 0 = 2146</td>
+                                                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">11330 데미지, 넉백, <br>
+                    적에게 6턴간 불리한 속성에게 <br>
+                    받는 데미지 30% 증가 효과 부여</td>
+                                                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">바꿔치기를 무시하고 39655 데미지, <br>
+                90% 확률로 6턴간 체력 회복 불능 부여,<br>
+                자신의 체력 2턴간 2000씩 회복</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                풀어빌시 힐/딜러<br>
+                인술에 붙은 부과효과마저도 좋다
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2166 + 100 + 0 = 2266</td>
+            </tr>
+        </tr>
+
+        <tr class="skill">
+            <td rowspan="2">사스케</td>
+            <td rowspan="2"><img src="사진/Card-0803.png"></td>
+            <td rowspan="2">5 차크라<br>->4 차크라<br>(2어빌 개방시)</td>
+                                                            
+            <td>체력</td>
+            <td>1640 + 300 + 0 = 1940</td>
+                                                            
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">데미지 감소를 무시하고 13530 데미지,<br>
+                3턴간 체력 회복 불능과 2턴간 행동불능을 <br>
+                각각 50% 확률로 부여</td>
+                                                                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">화면 내의 적 한명에게<br>
+                    54384 데미지 (체력 속성 대상)<br>
+                    70699 데미지 (3어빌 개방시 체력 속성 대상)<br>
+                    47586 데미지 (그 외 속성), <br>
+                    5턴간 체력 회복 불능과 8턴간 공격력 약화를 <br>
+                    각각 75% 확률로 부여</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                공격에 특화되어있는 캐릭터,<br>
+                풀어빌시 역속도 무시한다<br>
+                체속 담당 일찐
+            </td>
+            <tr class="skill">
+                <td>공격력</td>
+                <td>2360 + 100 + 0 = 2460</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">페인</td>
+            <td rowspan="2"><img src="사진/Card-0818.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                                                
+            <td>체력</td>
+            <td>2588 + 300 + 0 = 2888</td>
+                                                                
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">14418 데미지,<br>
+                80% 확률로 5턴간 공격력 감소 부여, <br>    
+                자신이 5턴간 입는 데미지 30% 감소</td>
+                                                                            
+            <td rowspan="2">전체 공격</td>
+            <td rowspan="2">36846 데미지,<br>
+                자신에게 5턴간 15000 만큼의 배리어 부여<br>    
+                3턴간 술법 데미지 무시</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                풀어빌시 역속무시, 탱커로 쓸 수 있고<br>
+                쫄들 처리하기에 좋은 전체 오의지만<br>
+                데미지가 약간 아쉽다
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>1502 + 100 + 0 = 1602</td>
+            </tr>
+        </tr>
+
+        <tr class="bravery">
+            <td rowspan="2">가아라</td>
+            <td rowspan="2"><img src="사진/Card-0835.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                                                    
+            <td>체력</td>
+            <td>2274 + 300 + 0 = 2574</td>
+                                                                    
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">14170 데미지, <br>
+                자신에게 5턴간 3000 만큼의 배리어 부여,<br>
+                자신에게 10턴간 차크라 회복 불능 저항과 <br>
+                교체 불능 저항을 각각 80% 확률로 부여</td>
+                                                                                
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">37408 데미지<br>
+                피격된 적에게 6턴간 불리한 속성에게 <br>
+                받는 데미지 30% 증가 효과 부여, <br>
+                자신의 차크라 3 회복</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                여러모로 육다라의 하위호환이지만<br>
+                용속 캐릭터의 공증 750의 필드스킬로<br>
+                다른 용속캐릭터의 데미지를<br>
+                뻥튀기 해줄 수 있다
+            </td>
+            <tr class="bravery">
+                <td>공격력</td>
+                <td>2734 + 100 + 0 = 2834</td>
+            </tr>
+        </tr>
+
+        <tr class="body">
+            <td rowspan="2">시카마루</td>
+            <td rowspan="2"><img src="사진/Card-0847.png"></td>
+            <td rowspan="2">4 차크라</td>
+                                                                        
+            <td>체력</td>
+            <td>2064 + 300 + 0 = 2364</td>
+                                                                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피를 제거, 바꿔치기를 무시하고 <br>
+                적의 속성을 3턴간 마음 속성으로 바꾼 뒤 <br>
+                ----------<br>    
+                13454 데미지 (기본)<br>
+                17490 데미지 (2어빌 개방시)</td>
+                                                                                    
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">절대 회피를 제거, 바꿔치기와 <br>
+                속성 기반의 데미지 감소 효과를 <br>
+                무시하고 36890 데미지 <br>
+                추가적으로 자신이 받는 일반, 콤비, <br>
+                후속, 카운터 공격을 5턴간 무효화</td>
+            <td rowspan="2">A</td>
+            <td rowspan="2">
+                준수한 범위 오의에<br>
+                인술에 붙어있는 속성 교체 효과로<br>
+                속성 퀘스트에서 상당히 유용하다<br>
+            </td>
+            <tr class="body">
+                <td>공격력</td>
+                <td>2734 + 100 + 0 = 2834</td>
+            </tr>
+        </tr>
+
+        <tr class="wisdom">
+            <td rowspan="2">카카시</td>
+            <td rowspan="2"><img src="사진/Card-0855.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                                                            
+            <td>체력</td>
+            <td>2214 + 300 + 0 = 2514</td>
+                                                                            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">배리어와 절대회피를 제거, <br>
+                바꿔치기를 무시하고<br>
+                15554 데미지 (용기 속성 대상) <br>
+                ----------<br>    
+                23331 데미지 (2어빌 개방시 용기 속성 대상)<br>
+                ----------<br>
+                13332 데미지 (그 외 속성)<br> 
+                ----------<br>   
+                자신의 차크라 3 회복</td>
+                                                                                        
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">배리어와 절대회피를 제거, <br>
+                바꿔치기와 데미지 감소 효과를 무시하고<br>
+                ----------<br>
+                44440 데미지 (용기 속성 대상)<br>
+                ----------<br>    
+                66660 데미지 (2어빌 개방시 용기 속성 대상)<br>
+                ----------<br>
+                40440 데미지 (그 외 속성)</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                인술만 계속써도 오의가<br>
+                차있는 신기한 캐릭터<br><br>
+                2어빌만 뚫으면 버프없이도<br>
+                10만 정도의 딜을 볼 수 있다 
+            </td>
+            <tr class="wisdom">
+                <td>공격력</td>
+                <td>2122 + 100 + 0 = 2222</td>
+            </tr>
+        </tr>
+
+        <tr class="heart">
+            <td rowspan="2">오비토</td>
+            <td rowspan="2"><img src="사진/Card-0857.png"></td>
+            <td rowspan="2">3 차크라</td>
+                                                                                
+            <td>체력</td>
+            <td>1820 + 300 + 0 = 2120</td>
+                                                                                
+            <td rowspan="2">범위 공격</td>
+            <td rowspan="2">절대 회피와 배리어 해제, <br>
+                바꿔치기를 무시하고 11510 데미지, 넉백, <br>
+                100% 확률로 3턴간 체력 회복 불능 부여<br>
+                    
+                4턴간 자신의 체력 2500씩 회복 (중첩 가능)</td>
+                                                                                            
+            <td rowspan="2">1인 공격</td>
+            <td rowspan="2">절대 회피와 배리어 해제, <br>
+                바꿔치기와 데미지 감소와<br>    
+                속성 기반의 데미지 감소를 무시하고<br>
+                40548 데미지, <br>
+                자신의 차크라 3 회복</td>
+            <td rowspan="2">S</td>
+            <td rowspan="2">
+                3 차크라에 역속 무시 오의에<br>
+                중첩 가능한 체력 회복이 <br>
+                붙어있는 인술까지<br>
+                종루토에게 밀리지 않는 캐릭터
+            </td>
+            <tr class="heart">
+                <td>공격력</td>
+                <td>2516 + 100 + 0 = 2616</td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>
